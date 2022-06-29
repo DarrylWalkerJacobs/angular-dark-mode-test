@@ -23,6 +23,10 @@ export class AppComponent {
 
   public onSubmit() {
     // Process checkout data here
-    console.warn('Your order has been submitted', this.demoForm.value);
+    alert(`You entered: ${JSON.stringify(this.demoForm.value)}`);
+  }
+
+  public reset() {
+    this.demoForm.reset();
   }
 }
