@@ -1,27 +1,48 @@
-# AngularDarkModeTest
+# AngularDarkModeTest 🌙
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 14.0.3.
 
+# Goals / Outcomes ✨
+
+- Using state
+- Leveraging existing dependencies
+
+&nbsp;
+
+# Pre-requisites ✅
+
+- Do not add additional dependencies
+
+&nbsp;
+
+# Requirements 📖
+
+- Add dark-mode switching functionality to the _existing_ dark-mode button
+  - Utilise the _existing_ dark-mode scss file by adding `bg-dark` and `text-light` classes to the `app-body` element
+- When in Dark mode:
+  - The button icon should be `fa-sun`
+  - The button icon colour should be `(#FFA500)`
+- Add column classes to the two paragraphs to get them to sit side by side
+- Add bootstrap classes to the button and form fields to style them appropriately
+- Add functionality to store the contents of the form field and display an alert when the form is submitted
+- Add functionality to clear the form fields when `Reset` is clicked
+
+&nbsp;
+
+# Think about 💡
+
+- How we would use Dark mode on other potential routes/components in a bigger application. Would your solution work for this?
+- The best way to handle form state
+
+&nbsp;
+
+# What's Already Been Done 🏁
+
+- Basic app UI
+- Dark mode and light mode styles/themes
+
+&nbsp;
+
 ## Development server
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The application will automatically reload if you change any of the source files.
-
-## Code scaffolding
-
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
-
-## Build
-
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory.
-
-## Running unit tests
-
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
-
-## Running end-to-end tests
-
-Run `ng e2e` to execute the end-to-end tests via a platform of your choice. To use this command, you need to first add a package that implements end-to-end testing capabilities.
-
-## Further help
-
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.io/cli) page.
+Run `npm start` for a dev server. Navigate to `http://localhost:4200/`. The application will automatically reload if you change any of the source files.

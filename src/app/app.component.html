@@ -1,27 +1,12 @@
-<div
-  class="app-body py-4"
-  [ngClass]="{
-    'bg-dark text-light': darkMode,
-    'bg-light text-dark': !darkMode
-  }"
->
+<div class="app-body py-4">
   <div class="container">
     <div class="row">
       <div class="col-6">
         <h1>{{ title }}</h1>
       </div>
       <div class="col-6 text-end">
-        <button type="button" class="btn btn-link" (click)="toggleDarkMode()">
-          <i
-            class="fas"
-            [ngClass]="{
-              'fa-sun': darkMode,
-              'fa-moon': !darkMode
-            }"
-            [ngStyle]="{
-              color: darkMode ? '#FFA500' : ''
-            }"
-          ></i>
+        <button type="button" class="btn btn-link">
+          <i class="fas fa-moon"></i>
         </button>
       </div>
     </div>
@@ -48,17 +33,12 @@
       </div>
     </div>
 
-    <form class="row g-3 mb-2" [formGroup]="demoForm" (ngSubmit)="onSubmit()">
+    <form class="row g-3 mb-2">
       <div class="col-auto">
-        <input
-          type="text"
-          placeholder="Name"
-          aria-label="Name"
-          formControlName="name"
-        />
+        <input type="text" placeholder="Name" aria-label="Name" />
       </div>
       <div class="col-auto">
-        <select aria-label="Default select example" formControlName="select">
+        <select aria-label="Default select example">
           <option selected>Open this select menu</option>
           <option value="1">One</option>
           <option value="2">Two</option>
@@ -67,7 +47,7 @@
       </div>
       <div class="col-12">
         <button type="submit">Submit</button>
-        <button type="button" (click)="reset()">Reset</button>
+        <button type="button">Reset</button>
       </div>
     </form>
   </div>
