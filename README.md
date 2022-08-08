@@ -22,7 +22,7 @@ This project was generated with [Angular CLI](https://github.com/angular/angular
 - When in Dark mode:
   - The button icon should be `fa-sun`
   - The button icon colour should be `(#FFA500)`
-- Add column classes to the two paragraphs to get them to sit side by side
+- Add bootstrap column classes to the two paragraphs to get them to sit side by side
 - Add bootstrap classes to the button and form fields to style them appropriately
 - Add functionality to store the contents of the form field and display an alert when the form is submitted
 - Add functionality to clear the form fields when `Reset` is clicked
